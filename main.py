@@ -7,12 +7,6 @@ from io import BytesIO
 openai_api_key = st.secrets["openai"]["api_key"]
 client = OpenAI(api_key=openai_api_key)
 
-def init_api():
-    with open("chatgpt_kict2409.env") as env:
-        for line in env:
-            key, value = line.strip().split("=")
-            os.environ[key] = value
-
 # 특정 경로의 텍스트 파일을 읽는 함수
 def read_template_file(file_path):
     try:
