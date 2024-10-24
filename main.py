@@ -103,5 +103,4 @@ def main():
                 st.warning("상황을 입력해주세요.")
 
 if __name__ == '__main__':
-    init_api()
     main()
